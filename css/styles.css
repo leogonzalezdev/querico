@@ -34,62 +34,6 @@ body{
     color: white;
 }
 
-/* Media queries */
-@media (max-width:1200px) {
-    html{font-size:57.2%}
-    .home .content h1{font-size: 5rem}
-    .home .content p{font-size: 1.5rem}
-    .home img{width: 60vw}
-    .promos .content{
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media (max-width:1024px) {
-    html{font-size: 52.5%}
-    .home img{width: 30vw}
-    .header{flex-flow: wrap;flex-direction: row; padding: 3rem;}
-    .header .navbar{
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        visibility: hidden;
-        opacity: 0;
-        left: 0;
-        width: 100%;
-        height: 70vh;
-        background-color: rgba(255, 255, 255, 0.8);
-        transition:.2s linear;
-    }
-    .header .navbar a{
-        color: var(--dark);
-        font-size: 3rem;
-        margin: 1rem;
-    }
-    .header .menu-btn{
-        opacity: 1;
-        visibility: visible;
-    }
-}
-@media (max-width:768px){
-    html{
-        font-size: 48.5%;
-    }
-    .home{
-        align-items: center;
-        justify-content: center;
-    }
-    .menu-btn-burger::before{
-        transform: translateY(-12px);
-    }
-    .menu-btn-burger::after{
-        transform: translateY(12px);
-    }
-    .home{flex-direction: column-reverse}
-}
 
 section{
     min-height: 100vh;
@@ -452,6 +396,7 @@ header label{
     background: var(--orange);
     border-radius: 50%;
 }
+
 /* Key frames */
 @keyframes float {
     0%, 100%{
@@ -460,6 +405,66 @@ header label{
     50%{
         transform: translateY(-3.5rem);
     }
+}
+
+/* Media queries */
+@media (max-width:1200px) {
+    html{font-size:57.2%}
+    .home .content h1{font-size: 5rem}
+    .home .content p{font-size: 1.5rem}
+    .home img{width: 60vw}
+    .promos .content{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:1024px) {
+    html{font-size: 52.5%}
+    .home img{width: 30vw}
+    .header{flex-flow: wrap;flex-direction: row; padding: 3rem;}
+    .header .navbar{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        left: 0;
+        width: 100%;
+        height: 70vh;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition:.2s linear;
+    }
+    .header .navbar a{
+        color: var(--dark);
+        font-size: 3rem;
+        margin: 1rem;
+    }
+    .header .menu-btn{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: 48.5%;
+    }
+    .home{
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .menu-btn-burger::before{
+        transform: translateY(-12px);
+    }
+    .menu-btn-burger::after{
+        transform: translateY(12px);
+    }
+    .home{flex-direction: column-reverse}
 }
 
 
