@@ -1,0 +1,6 @@
+categories
+    Sandwich
+    Tablas
+    Vinos
+    Salamines
+    Quesos

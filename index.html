@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Meta Basic -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- SEO -->
+  <meta name="description"
+    content="Fiambres, quesos, tortas y tartas de la mejor calidad de Córdoba. Vinos Organicos, regalos y catering para eventos.Eso y más en Que Rico - Web" />
+  <meta name="keywords" content="quesos, fiambres, salamines, cordoba, eventos, que rico" />
+  <!-- AUTHOR -->
+  <meta name="author" content="leogonzalezok" />
+  <meta name="copyright" content="Gonzalez Leonel" />
+  <title>Tienda Online - Que Rico</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <a href="#home" class="logo">
+      <img src="img/logo.png" alt="Logo" width="100" heigth="100">
+    </a>
+    <!-- Responsive Menú -->
+    <div class="menu-btn">
+      <div class="menu-btn-burger"></div>
+    </div>
+    <!-- Navbar links -->
+    <nav class="navbar" id="navbar">
+      <a class="nav-link" href="#home">HOME</a>
+      <a class="nav-link" href="#promos">PROMOS</a>
+      <a class="nav-link" href="#products">PRODUCTOS</a>
+      <a class="nav-link" href="#service">SERVICIOS</a>
+      <a class="nav-link" href="#about">NOSOTROS</a>
+      <a class="nav-link" href="#contact">CONTACTO</a>
+      <a class=""><i class="cart fas fa-shopping-cart"></i></a>
+      <div class="submenu">
+        <div class="carrito">
+          <div class="item">
+            <p class="producto">Producto</p>
+            <p class="precio">precio</p>
+            <p class="cantidad">cantidad</p>
+            <button class="btn-grad btn-cant">
+              +
+            </button>
+            <button class="btn-grad btn-cant">
+              -
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="content">
+      <h1 id="home-title">Bienvenidos <br> a nuestra Web.</h1>
+      <p id="home-welcome">Desde aquí vas a poder hacer pedidos, consultar <br>nuestras promos, servicios para eventos,
+        y mucho más!</p>
+      <a href="#promos" id="btn-home" class="btn-grad">ORDENAR AHORA <i class="fas fa-shopping-bag"></i></a>
+    </div>
+    <div class="image">
+      <img src="img/logo_dibujo.png" alt="Sandwich">
+    </div>
+  </section>
+  <!-- Promos -->
+  <section id="promos" class="promos">
+    <div class="promos-header">
+      <h2>
+        <span>P</span><span>R</span><span>O</span><span>M</span><span>O</span><span>S</span><span>!</span>
+      </h2>
+    </div>
+    <div class="content">
+      <div class="card">
+        <div class="card-header">
+          <p>3 Cervezas Q´liau</p>
+          <img src="img/WhatsApp Image 2021-06-19 at 00.01.03.jpeg" alt="" srcset="">
+        </div>
+        <div class="card-body">
+          <p>$ 500 ARS</p>
+          <p>Sabor a elegir.</p>
+          <a href="#" class="btn-grad btn-cart-plus">Añadir <i class="fas fa-cart-plus"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <p>Sandwich de Miga</p>
+          <img src="img/644525-1595952797816.png" alt="Sandwich" srcset="">
+        </div>
+        <div class="card-body">
+          <p>$ 750 ARS</p>
+          <p>1 Doc. Paleta y Queso.</p>
+          <a href="#" class="btn-grad btn-cart-plus">Añadir <i class="fas fa-cart-plus"></i></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <p>3 Cervezas Q´liau</p>
+          <img src="img/WhatsApp Image 2021-06-19 at 00.01.03.jpeg" alt="" srcset="">
+        </div>
+        <div class="card-body">
+          <p>$ 500 ARS</p>
+          <p>Sabor a elegir.</p>
+          <a href="#" class="btn-grad btn-cart-plus">Añadir <i class="fas fa-cart-plus"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <h2 class="products-title">PRODUCTOS</h2>
+    <div id="items" class="items"></div>
+  </section>
+
+  <!-- TEMPLATES -->
+  <template id="templateCard" class="templateCard">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="title">TITULO</h5>
+        <img class="img-card" src="" alt="">
+        <p><span>$ <span class="precio"></span> ARS</p>
+        <p class="description">description</p>
+        <button type="submit" class="btn-grad btn-product-add">Añadir <i class="fas fa-plus"></i></button>
+      </div>
+    </div>
+  </template>
+
+  <template id="item-carrito">
+    <tr>
+      <th scope="row">id</th>
+      <td>Café</td>
+      <td>1</td>
+      <td>
+        <button class="btn btn-info btn-sm">
+          +
+        </button>
+        <button class="btn btn-danger btn-sm">
+          -
+        </button>
+      </td>
+      <td>$ <span>500</span></td>
+    </tr>
+  </template>
+
+
+
+  <script src="js/app.js"></script>
+  <script src="lib/scrollreveal.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+
+</html>
