@@ -87,11 +87,11 @@ header .navbar a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     cursor: pointer;
-    top: 0;
-    right: 2rem;
+    top: -.3rem;
+    right: 1.3rem;
     transition: all 0.5s ease-in-out;
 }
 .menu-btn-burger{
