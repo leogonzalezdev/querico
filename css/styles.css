@@ -34,6 +34,63 @@ body{
     color: white;
 }
 
+/* Media queries */
+@media (max-width:1200px) {
+    html{font-size:57.2%}
+    .home .content h1{font-size: 5rem}
+    .home .content p{font-size: 1.5rem}
+    .home img{width: 60vw}
+    .promos .content{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:1024px) {
+    html{font-size: 52.5%}
+    .home img{width: 30vw}
+    .header{flex-flow: wrap;flex-direction: row; padding: 3rem;}
+    .header .navbar{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        left: 0;
+        width: 100%;
+        height: 70vh;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition:.2s linear;
+    }
+    .header .navbar a{
+        color: var(--dark);
+        font-size: 3rem;
+        margin: 1rem;
+    }
+    .header .menu-btn{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: 48.5%;
+    }
+    .home{
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-btn-burger::before{
+        transform: translateY(-12px);
+    }
+    .menu-btn-burger::after{
+        transform: translateY(12px);
+    }
+    .home{flex-direction: column-reverse}
+}
+
 section{
     min-height: 100vh;
     padding: auto;
@@ -87,16 +144,16 @@ header .navbar a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
-    top: -.3rem;
-    right: 1.3rem;
+    top: 0;
+    right: 2.3rem;
     transition: all 0.5s ease-in-out;
 }
 .menu-btn-burger{
     width: 35px;
-    height: 4px;
+    height: 3px;
     background: #fff;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
@@ -105,17 +162,17 @@ header .navbar a:hover{
 .menu-btn-burger::after{
     content: "";
     position: absolute;
-    width: 45px;
-    height: 5px;
+    width: 40px;
+    height: 4px;
     background: #fff;
     border-radius: 5px;
     transition: all 0.5s ease-in-out;
 }
 .menu-btn-burger::before{
-    transform: translateY(-14px);
+    transform: translateY(-12px);
 }
 .menu-btn-burger::after{
-    transform: translateY(14px);
+    transform: translateY(12px);
 }
 /* Animation Responsive Menú */
 .menu-btn.open .menu-btn-burger{
@@ -338,7 +395,7 @@ header label{
     flex-direction: column;
     color: var(--orange);
     background: var(--dark);
-    width: 25rem;
+    width: 32rem;
     height: auto;
     padding: 2.6rem;
     text-align: center;
@@ -404,62 +461,7 @@ header label{
         transform: translateY(-3.5rem);
     }
 }
-/* Media queries */
-@media (max-width:1200px) {
-    html{font-size:57.2%}
-    .home .content h1{font-size: 5rem}
-    .home .content p{font-size: 1.5rem}
-    .home img{width: 60vw}
-    .promos .content{
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media (max-width:1024px) {
-    html{font-size: 52.5%}
-    .home img{width: 30vw}
-    .header{flex-flow: wrap;flex-direction: row;}
-    .header .navbar{
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        visibility: hidden;
-        opacity: 0;
-        left: 0;
-        width: 100%;
-        height: 70vh;
-        background-color: rgba(255, 255, 255, 0.8);
-        transition:.2s linear;
-    }
-    .header .navbar a{
-        color: var(--dark);
-        font-size: 3rem;
-        margin: 1rem;
-    }
-    .header .menu-btn{
-        opacity: 1;
-        visibility: visible;
-    }
-}
-@media (max-width:768px){
-    html{
-        font-size: 48.5%;
-    }
-    .home{
-        align-items: center;
-        justify-content: center;
-    }
-    .menu-btn-burger::before{
-        transform: translateY(-12px);
-    }
-    .menu-btn-burger::after{
-        transform: translateY(12px);
-    }
-    .home{flex-direction: column-reverse}
-}
+
 
 
 /*
