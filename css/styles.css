@@ -28,13 +28,9 @@
 html{
     font-size: 62.4%;
 }
-
 body{
-    background:var(--dark);
-    color: white;
+    background: var(--dark);
 }
-
-
 section{
     min-height: 100vh;
     padding: auto;
@@ -57,13 +53,14 @@ section{
     display: flex;
     align-items: center;
     justify-content:space-between;
-    z-index: 1000;
+    z-index: 5000;
     transition: all 450ms;
 }
 #header{
     transition-timing-function: ease-in-out;
 }
 .header .cart i{
+    padding: 1rem;
     color: var(--white);
     font-size: 2rem;
 } 
@@ -252,17 +249,17 @@ header label{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: var(--white) url(../img/circle.png) no-repeat;
+    background: linear-gradient(to bottom, #fb6400 0%, var(--orange)  70%);
     background-position: center;
     background-size: cover;
     min-height: 100vh;
 }
 
 /* heading promos */
-   span:nth-child(4n) { color:var(--dark-hover)}
-   span:nth-child(4n-1) { color:var(--orange) }
-   span:nth-child(4n-2) { color:var(--dark-hover); }
-   span:nth-child(4n-3) { color:var(--orange); }
+   span:nth-child(4n) { color:var(--dark)}
+   span:nth-child(4n-1) { color:var(--white) }
+   span:nth-child(4n-2) { color:var(--dark); }
+   span:nth-child(4n-3) { color:var(--white); }
 .promos h2{
     font-size: 6.5rem;
     color: var(--white);
@@ -280,7 +277,7 @@ header label{
     flex-direction: column;
     color: var(--orange);
     box-shadow: 5rem 5rem 5rem solid rgba(0, 0, 0, 0.1);
-    background: var(--dark);
+    background: var(--white);
     width: 32rem;
     height: auto;
     padding: 2.6rem;
@@ -291,7 +288,7 @@ header label{
     box-shadow: 0px 0px 1rem rgba(238, 130, 33, 0.1);
 }
 .promos .content .card:hover{
-    box-shadow: 0px 0px 1.5rem var(--dark-hover);
+    box-shadow: 0px 0px 1.5rem var(--white);
 }
 .promos .content .card .card-header p{
     font-size: 2.5rem;
@@ -305,6 +302,10 @@ header label{
     font-size: 2rem;
     padding: 1rem;
 }
+svg{
+    background-color: var(--dark);
+    position: absolute;
+}
 /* Products */
 .btn-product-add{
     width: 12rem;
@@ -313,17 +314,22 @@ header label{
     margin-top: .6rem;
 }
 .products{
+    position: absolute;
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    background-color:var(--white);
+    background: transparent;
+    background-position: center;
+    background-size: cover;
     width: 100%;
-    color: var(--dark);
+    color: var(--dark-hover);
     height: auto;
 }
 .products h2{
     font-size: 6.5rem;
+    color: var(--white);
 }
 .products .items{
     display: flex;
@@ -338,7 +344,7 @@ header label{
     justify-content: center;
     flex-direction: column;
     color: var(--orange);
-    background: var(--dark);
+    background: var(--white);
     width: 32rem;
     height: auto;
     padding: 2.6rem;
@@ -349,7 +355,7 @@ header label{
     box-shadow: 0px 0px 1rem rgba(238, 130, 33, 0.1);
 }
 .items .card:hover{
-    box-shadow: 0px 0px 1.5rem var(--dark-hover);
+    box-shadow: 0px 0px 1.5rem var(--white);
 }
 .card-body h5{
     font-size: 2rem;
