@@ -38,18 +38,18 @@ window.sr = ScrollReveal();
   });
   sr.reveal('#home-title',{
     duration:2000,
-    origin:'left',
+    origin:'top',
     distance: '-200px'
   });
   sr.reveal('#home-welcome',{
     duration:2000,
     origin:'left',
-    distance: '-200px'
+    distance: '-100px'
   });
   sr.reveal('#btn-home',{
     duration:2000,
-    origin:'left',
-    distance: '-200px'
+    origin:'bottom',
+    distance: '-100px'
   });
 
   sr.reveal('.card', {
